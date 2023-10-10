@@ -1,0 +1,424 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeec;
+    color: #343434;
+}
+
+.navigationbalk2 {
+    display: flex;
+    background-color: #3764e5;
+    height: 100px;
+    min-width: 1500px;
+}
+
+.navigationbalk2 a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+/* Change the color of links on hover */
+.navigationbalk2 a:hover {
+    background-color: #eeeeec;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.navigationbalk2 a.active {
+    background-color: #90c4d9;
+    color: white;
+}
+
+.navigationbalk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #3764e5;
+    height: 150px;
+    min-width: 1500px;
+}
+
+.navigationbalk a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 100px;
+    width: 25%;
+}
+
+/* Change the color of links on hover */
+.navigationbalk a:hover {
+    background-color: #eeeeec;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.navigationbalk a.active {
+    background-color: #90c4d9;
+    color: white;
+}
+
+.homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 400px;
+    padding-left: 50px;
+}
+
+.padding {
+    padding-top: 65px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactparent {
+    width: 700px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #811b1b;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    /*padding: 50px;*/
+}
+
+.blokproject {
+    height: 450px;
+    padding: 30px 140px;
+    /*background-color: #f2f2f2;*/
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+}
+
+.blokprojectr {
+    height: 450px;
+    padding: 30px 140px;
+    /*background-color: #f2f2f2;*/
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 70px;
+}
+
+.inleidingtekst {
+    color: #000000;
+    background-color: #eeb1d2;
+    flex-grow: 1;
+    font-size: 35px;
+    padding: 5px 50px;
+    max-width: 1300px;
+    min-width: 900px;
+}
+
+.inleidingtekstr {
+    color: #000000;
+    background-color: #eeb1d2;
+    flex-grow: 1;
+    text-align: right;
+    font-size: 35px;
+    padding: 5px 50px;
+    max-width: 1300px;
+    min-width: 900px;
+}
+
+.fotoproject {
+    background-color: #343434;
+    flex-grow: 1;
+    min-width: 500px;
+    overflow: hidden;
+}
+
+.btnmore {
+    color: #343434;
+    font-size: 30px;
+}
+
+.website {
+    display: flex;
+    flex-direction: column;
+    /*margin: 150px 200px;*/
+    text-align: center;
+}
+
+.website p {
+    font-size: 30px;
+    margin: 150px 500px 0 500px;
+    min-width: 500px;
+    color: #505050;
+}
+
+.website h1 {
+    font-size: 160px;
+    margin: 0;
+    min-width: 1600px;
+}
+
+.fpro {
+    height: 800px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.tweetekst {
+    padding: 5px 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tweetekst p {
+    margin: 0 40px 40px 40px;
+}
+
+.tweetekst h3 {
+    margin: 0 40px 45px 40px;
+}
+
+.drietekst {
+    display: flex;
+    flex-direction: row;
+    /*height: 630px;
+    background-color: #811b1b;*/
+}
+
+.drietekst h3 {
+    min-font-size: 20px;
+    max-font-size: 50px;
+    margin: 0;
+}
+
+.protekst1 {
+    flex-grow: 1;
+    font-size: 40px;
+    margin: 10px 25px 10px 50px;
+    width: 30%;
+    min-width: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(242, 242, 242, 0.4);
+}
+
+.protekst2 {
+    flex-grow: 1;
+    font-size: 40px;
+    margin: 10px;
+    width: 30%;
+    min-width: 500px;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(242, 242, 242, 0.4);
+}
+
+.protekst3 {
+    flex-grow: 1;
+    font-size: 40px;
+    margin: 10px 50px 10px 25px;
+    width: 30%;
+    min-width: 500px;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(242, 242, 242, 0.4);
+}
+
+#projects1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 5px 10px 5px;
+}
+
+#contactme {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 45px;
+    width: 500px;
+    flex-grow: 0;
+}
+
+#mail {
+    margin: 10px;
+    background-color: #dfdfd5;
+    width: 670px;
+    flex-grow: 1;
+    border: 2px black solid;
+    border-radius: 6px;
+}
+
+#name {
+    margin: 10px;
+    background-color: #dfdfd5;
+    width: 670px;
+    flex-grow: 1;
+    border: 2px black solid;
+    border-radius: 6px;
+}
+
+#mailtext {
+    margin: 10px;
+    background-color: #dfdfd5;
+    width: 670px;
+    flex-grow: 2;
+    border: 2px black solid;
+    border-radius: 6px;
+}
+
+#mailbutton {
+    text-align: center;
+    padding: 14px 0;
+    margin: 10px;
+    background-color: #dfdfd5;
+    width: 300px;
+    flex-grow: 0;
+    border: 2px #dfdfd5 solid;
+    border-radius: 20px;
+    font-size: 45px;
+    color: #423d29;
+}
+
+#teksthome {
+    /*width: 1060px;*/
+    color: #eeeeec;
+    z-index: 2;
+    position: absolute;
+    margin-right: 900px;
+    margin-bottom: 50px;
+    background-color: rgba(238, 177, 210, 0.8);
+    /*background-color: rgba(114, 115, 116, 0.75);*/
+    border-radius: 40px;
+}
+
+#teksthome h1 {
+    font-size: 100px;
+    margin: 0 10px;
+}
+
+#teksthome h3 {
+    margin: 0 10px 15px 20px;
+}
+
+#picture1 {
+    height: 700px;
+    width: 800px;
+    background-color: #424242;
+    z-index: 1;
+    position: absolute;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+#picture2 {
+    height: 500px;
+    width: 380px;
+    background-color: #6c6c6c;
+    z-index: 3;
+    position: absolute;
+    margin-left: 900px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 3px solid #343434;
+}
+
+#tekstabout {
+    width: 50%;
+    /*border: 3px solid #3b0a0a;*/
+}
+
+#tekstabout h1 {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    font-size: 70px;
+}
+
+#tekstabout p {
+    font-size: 25px;
+}
+
+#tekst1 {
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+
+#tekst2 {
+    text-align: right;
+    margin-top: 70px;
+    padding-right: 50px;
+    padding-left: 100px;
+}
+
+#pictureabout {
+    width: 50%;
+    height: 805px;
+    background-color: black;
+    overflow: hidden;
+}
+
+
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dfdfd5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    resize: vertical;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eeeeec;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #eeeeec;
+    color: #000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #d574b0;
+}
+
+input[type=reset] {
+    background-color: #eeeeec;
+    color: #000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #d574b0;
+}
+
+.container {
+    font-size: 25px;
+    color: #000000;
+    margin: 0 auto;
+    width: 700px;
+    border-radius: 5px;
+    background-color: #eeb1d2;
+    padding: 1px 50px 40px 50px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="navigationbalk">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About me</a>
+        <a href="./projects.html">Projects</a>
+        <a class="active" href="./contact.html">Contact</a>
+    </div>
+
+    <div class="padding">
+
+        <div class="container">
+            <div id="contactme">
+                <h2>CONTACT ME</h2>
+            </div>
+            <form action="mailto:a.van.doremalen@sintlucasedu.nl" method="post" enctype="text/plain">
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write your text here" style="height:200px"></textarea>
+
+                <input type="submit"  value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+
+
+
+        <!--<div class="contactparent">
+            <div id="contactme">
+                <h2>CONTACT ME</h2>
+            </div>
+            <div id="name"></div>
+            <div id="mail"></div>
+            <div id="mailtext"></div>
+            <a id="mailbutton">SUBMIT</a>
+        </div>!-->
+    </div>
+
+</body>
+</html>
