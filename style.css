@@ -169,7 +169,7 @@ body{
 }
 
 .tweetekst {
-    padding: 5px 80px;
+    padding: 0 180px;
     display: flex;
     flex-direction: row;
 }
@@ -182,53 +182,33 @@ body{
     margin: 0 40px 45px 40px;
 }
 
-.drietekst {
-    display: flex;
-    flex-direction: row;
-    /*height: 630px;
-    background-color: #811b1b;*/
-}
-
-.drietekst h3 {
-    min-font-size: 20px;
-    max-font-size: 50px;
-    margin: 0;
-}
 
 .protekst1 {
+    background-color: #3a353a;
+    color: #f2f2f2;
     flex-grow: 1;
     font-size: 40px;
-    margin: 10px 25px 10px 50px;
-    width: 30%;
-    min-width: 500px;
+    /*margin: 0 25px 10px 50px;*/
+    max-width: 600px;
+    /*min-width: 500px;*/
     border: 2px solid black;
-    border-radius: 10px;
     padding: 20px;
-    background-color: rgba(242, 242, 242, 0.4);
+    margin: 0 auto;
+    /*background-color: rgba(242, 242, 242, 0.4);*/
 }
 
 .protekst2 {
+    background-color: #5b565b;
+    color: #f2f2f2;
     flex-grow: 1;
     font-size: 40px;
-    margin: 10px;
-    width: 30%;
-    min-width: 500px;
+    /*margin: 0 25px 10px 50px;*/
+    max-width: 600px;
+    /*min-width: 500px;*/
     border: 2px solid black;
     padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(242, 242, 242, 0.4);
-}
+    margin: 0 auto;
 
-.protekst3 {
-    flex-grow: 1;
-    font-size: 40px;
-    margin: 10px 50px 10px 25px;
-    width: 30%;
-    min-width: 500px;
-    border: 2px solid black;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(242, 242, 242, 0.4);
 }
 
 #projects1 {
@@ -421,4 +401,93 @@ input[type=reset]:hover {
     border-radius: 5px;
     background-color: #eeb1d2;
     padding: 1px 50px 40px 50px;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.sticky + .content {
+    padding-top: 102px;
+}
+
+
+#container div{
+    padding-top: 15px;
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr 5fr 5fr 5fr 1fr 3fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr 3fr;
+    grid-template-areas:
+
+        "blijffittitle . . . . . blijffitfoto "
+        "blijffittitle . blijffitinleiding blijffitinleiding blijffitinleiding . blijffitfoto "
+        "blijffittitle . blijffit1t blijffit2t blijffit3t . blijffitfoto"
+        "blijffittitle . blijffit1 blijffit2 blijffit3 . blijffitfoto "
+        "blijffittitle . blijffit1 blijffit2 blijffit3 . blijffitfoto "
+}
+
+#container #blijffittitle{
+    grid-area: blijffittitle;
+    height: 914px;
+}
+
+#container #blijffitinleiding {
+    grid-area: blijffitinleiding;
+    font-size: 25px;
+    margin: 0 60px 60px 60px;
+}
+
+#container #blijffitfoto {
+    grid-area: blijffitfoto;
+    padding-right: 10px;
+    height: 914px;
+}
+
+#container #blijffit1 {
+    grid-area: blijffit1;
+    font-size: 25px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+#container #blijffit2 {
+    grid-area: blijffit2;
+    font-size: 25px;
+    padding: 0;
+}
+
+#container #blijffit3 {
+    grid-area: blijffit3;
+    font-size: 25px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+#container #blijffit1t {
+    grid-area: blijffit1t;
+    font-size: 30px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+#container #blijffit2t {
+    grid-area: blijffit2t;
+    font-size: 30px;
+    padding: 0;
+}
+
+#container #blijffit3t {
+    grid-area: blijffit3t;
+    font-size: 30px;
+    margin-left: 10px;
+    padding: 0;
 }
