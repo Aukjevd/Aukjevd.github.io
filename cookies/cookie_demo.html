@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Consent Banner</title>
+    <!-- Google Font -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="cookies.css" />
+</head>
+<body>
+<div id="cookiePopup">
+    <img src="cookie.png" />
+    <p>
+        Our website uses cookies to provide your browsing experience and
+        relevant information. Before continuing to use our website, you agree &
+        accept of our <a href="cookie_policy.html">Cookie Policy & Privacy.</a>
+    </p>
+    <button id="acceptCookie">Accept</button>
+</div>
+<!-- Script -->
+<script src="../script.js"></script>
+</body>
+</html>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+    let popUp = document.getElementById("cookiePopup");
+    //When user clicks the accept button
+    document.getElementById("acceptCookie").addEventListener("click", () => {
+        //Create date object
+        let d = new Date();
+        //Increment the current time by 1 minute (cookie will expire after 1 minute)
+        d.setMinutes(2 + d.getMinutes());
+        //Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
+        document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
+        //Hide the popup
+        popUp.classList.add("hide");
+        popUp.classList.remove("show");
+    });
+    //Check if cookie is already present
+    const checkCookie = () => {
+        //Read the cookie and split on "="
+        let input = document.cookie.split("=");
+        //Check for our cookie
+        if (input[0] == "myCookieName") {
+            //Hide the popup
+            popUp.classList.add("hide");
+            popUp.classList.remove("show");
+        } else {
+            //Show the popup
+            popUp.classList.add("show");
+            popUp.classList.remove("hide");
+        }
+    };
+    //Check if cookie exists when page loads
+    window.onload = () => {
+        setTimeout(() => {
+            checkCookie();
+        }, 2000);
+    };
+</script>
